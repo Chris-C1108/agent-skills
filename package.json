@@ -1,0 +1,25 @@
+{
+  "name": "agent-skills-workspace",
+  "version": "1.0.0",
+  "description": "Personal AI Agent Skills Studio & Governance Workspace (面向 Codex / Claude Code / OpenCode / Windsurf 的个人技能研发工作台)",
+  "private": true,
+  "scripts": {
+    "lint": "node scripts/lint-skills.js",
+    "install:all": "node scripts/install.js --target all",
+    "install:agents": "node scripts/install.js --target agents",
+    "install:codex": "node scripts/install.js --target codex",
+    "list": "node scripts/install.js --list",
+    "new-skill": "node scripts/new-skill.js",
+    "audit:agents-md": "python skills/agents-md-lifecycle/scripts/audit_agents_md.py --file AGENTS.md"
+  },
+  "keywords": [
+    "ai-agent",
+    "agent-skills",
+    "codex",
+    "claude-code",
+    "opencode",
+    "agents-md"
+  ],
+  "author": "Chris Chen",
+  "license": "MIT"
+}
